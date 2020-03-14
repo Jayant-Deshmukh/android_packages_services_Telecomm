@@ -503,7 +503,7 @@ public class Ringer {
         if (Settings.System.getIntForUser(mContext.getContentResolver(),
                 Settings.System.INCALL_FEEDBACK_VIBRATE, 0, UserHandle.USER_CURRENT) == 1) {
             if (mVibrator.hasVibrator()) {
-                mVibrator.vibrate(VibrationEffect.get(VibrationEffect.EFFECT_THUD));
+                mVibrator.vibrate(VibrationEffect.get(VibrationEffect.EFFECT_CLICK));
             }
         }
 
